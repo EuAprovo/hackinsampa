@@ -49,67 +49,29 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="">Listar Leis</a></li>
-        <li><a href="vereador/">Listar dos vereadores</a></li>
+        <li><a href="">Listar leis</a></li>
+        <li><a href="vereador/">Listar vereadores</a></li>
         <li><a href="detalhe-vereador/">Detalhes dos vereadores</a></li>
-        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Detalhes das leis <span class="caret"></span></a>
-          <ul class="dropdown-menu mega">
-            <li class="navbar-text">
-              <div class="column">
-                <ul class="list-unstyled">
-                  <li class="title"><a href="/">Homepage</a></li>
-                  <li class="title">Login/Signup Pages</li>
-                  <li><a href="signin.html">Signin</a></li>
-                  <li><a href="register.html">Register</a></li>
-                  <li><a href="forgot-password.html">Forgot Password</a></li>
-                </ul>
-              </div>
-              <div class="column">
-                <ul class="list-unstyled">
-                  <li class="title">Agent Pages</li>
-                  <li><a href="agent_list.html">Agent List</a></li>
-                  <li><a href="agent.html">Agent Profile</a></li>
-                  <li class="title"><a href="#">Property pages</a></li>
-                  <li><a href="property_listing.html">Property List View</a></li>
-                  <li><a href="property_grid.html">Property Grid View</a></li>
-                  <li><a href="property_single.html">Property Single View</a></li>
-                  <li><a href="add_listing.html">Add Listing</a></li>
-                  <li><a href="compare.html">Compare Properties</a></li>
-                </ul>
-              </div>
-              div class="column">
-                <ul class="list-unstyled">
-                  <li class="title">Other Pages</li>
-                  <li><a href="plans.html">Plans</a></li>
-                  <li><a href="information_page.html">Information Page</a></li>
-                  <li><a href="coming_soon.html">Coming Soon</a></li>
-                  <li><a href="404_error.html">Error Page</a></li>
-                  <li><a href="contact.html">Contact Page</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </li>
       </ul>
+      <img src="../img/logo-camara.png"  style="float: right; margin-top: 15px"/>
     </div>
     <!-- /.navbar-collapse -->
   </div>
-  < /.container-fluid -->
 </nav>
 <div class="container">
   <div class="search-form">
     <div class="card">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="form-group">
             <input type="text" class="form-control input-lg" placeholder="Listar Leis">
           </div>
           </div>
-              </div>
-            </div>
             <div class="col-md-4">
               <div class="form-group">
                 <button type="submit" class="btn btn-lg btn-primary btn-block">Pesquisar</button>
+              </div>
+            </div>
               </div>
             </div>
           </div>
@@ -121,47 +83,27 @@
 <div id="content">
   <div class="container">
     <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <ol class="breadcrumb">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Property for sale</a></li>
-          <li><a href="#">North Yorkshire</a></li>
-          <li><a href="#">Unity City Academy, North Yorkshire, TS3 property for sale</a></li>
-        </ol>
-        <h1 class="page-header h3">Property for sale near Unity City Academy, North Yorkshire, TS3</h1>
+      <div class="col-md-12">
         <div class="row">
-          <div class="col-md-9">
-            <div class="sorting">
-              <form class="form-inline">
-                <div class="form-group">
-                  <select class="form-control">
-                    <option selected="selected">Most recent</option>
-                    <option>Highest price</option>
-                    <option>Lowest price</option>
-                    <option>Most reduced</option>
-                    <option>Most popular</option>
-                  </select>
-                </div>
-                <div class="btn-group pull-right" role="group"> <a href="property_grid.html" class="btn btn-default"><i class="fa fa-th"></i></a> <a href="property_listing.html" class="btn btn-default"><i class="fa fa-bars"></i></a> </div>
-              </form>
-            </div>
+          <div class="col-md-12">
             <div class="clearfix"></div>
-            <div class="item-listing list">
-
+            <div class="item-listing grid">
               <div ng-repeat="x in json">
                 <div class="item" data-aos="fade-up">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="item-image"> <a href="property_single.html"><img src="img/demo/property/1.jpg" class="img-responsive">
-                        <div class="item-for">{{x.resultado}}</div>
-                        </a> </div>
-                      <div class="added-on">{{x.presentes}} presentes</div>
-                      <div class="added-by">{{x.nome}}</div>
+                  <div class="row" style="display: inline">
+                    <div class="col-md-2">
+                      <img src="../img/hackinsampa.jpeg" />
+                    </div>
+                    <div class="col-md-4" style="margin-left: 200px;">
+                      <div class="added-by" style="font-weight: bold; margin: 5px;">{{x.nome}}</div>
+                      <div class="added-on" style="margin: 5px;">{{x.presentes}} {{x.presentes > 1 ? 'presentes': 'presente'}}</div>
+                      <div class="item-title" style="margin: 5px;">{{x.resultado}}</div>
+                      <i class="fa fa-thumbs-up fa-2x" aria-hidden="true" style="color: green; opacity: 0.7; margin: 5px;"></i>
+                      <i class="fa fa-thumbs-down fa-2x" aria-hidden="true" style="color: red; opacity: 0.7; margin: 5px;"></i>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

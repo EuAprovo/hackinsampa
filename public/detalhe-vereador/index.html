@@ -52,45 +52,8 @@
           <li><a href="../">Listar leis</a></li>
           <li><a href="../vereador/">Listar vereadores</a></li>
           <li><a href="">Detalhes dos vereadores</a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Detalhes dos leis <span class="caret"></span></a>
-          <ul class="dropdown-menu mega">
-            <li class="navbar-text">
-              <div class="column">
-                <ul class="list-unstyled">
-                  <li class="title"><a href="index-2.html">Homepage</a></li>
-                  <li class="title">Login/Signup Pages</li>
-                  <li><a href="signin.html">Signin</a></li>
-                  <li><a href="register.html">Register</a></li>
-                  <li><a href="forgot-password.html">Forgot Password</a></li>
-                </ul>
-              </div>
-              <div class="column">
-                <ul class="list-unstyled">
-                  <li class="title">Agent Pages</li>
-                  <li><a href="agent_list.html">Agent List</a></li>
-                  <li><a href="agent.html">Agent Profile</a></li>
-                  <li class="title"><a href="#">Property pages</a></li>
-                  <li><a href="index.html">Property List View</a></li>
-                  <li><a href="property_grid.html">Property Grid View</a></li>
-                  <li><a href="property_single.html">Property Single View</a></li>
-                  <li><a href="add_listing.html">Add Listing</a></li>
-                  <li><a href="compare.html">Compare Properties</a></li>
-                </ul>
-              </div>
-              <div class="column">
-                <ul class="list-unstyled">
-                  <li class="title">Outros</li>
-                  <li><a href="plans.html">Planos</a></li>
-                  <li><a href="information_page.html">Information Page</a></li>
-                  <li><a href="coming_soon.html">Coming Soon</a></li>
-                  <li><a href="404_error.html">Erro Página</a></li>
-                  <li><a href="contact.html">Contatar Página</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </li>
       </ul>
+      <img src="../img/logo-camara.png"  style="float: right; margin-top: 15px"/>
     </div>
     <!-- /.navbar-collapse -->
   </div>
@@ -148,10 +111,12 @@
                 <div class="item" data-aos="fade-up">
                 <div class="row">
                   <div class="col-md-3">
-                    <div class="item-image"> <img src="../img/demo/profile.jpg" class="img-responsive"> </div>
+                    <div class="item-image"> <img src="../img/profile-placeholder.jpg" class="img-responsive"> </div>
                   </div>
-                  <div class="col-md-9"> <a href="#" class="btn btn-primary pull-right">View Profile</a>
-                    <h3 class="item-title"><a href="agent.html">{{x.nome}} - {{x.partido}}</a></h3>
+                  <div class="col-md-9" style="color: #009688"> <a href="#" class="btn btn-primary pull-right">View Profile</a>
+                    <h3 class="item-title"><a href="agent.html">{{x.nome}}</a></h3>
+                    <p class="item-title">{{x.partido}}</p>
+                    <p class="item-title">{{x.leis.length}} {{x.leis.length > 1 ? 'projetos' : 'projeto'}}</p>
                     <div class="item-actions"><a href="#"><i class="fa fa-envelope-o"></i> Contact Agent</a> </div>
                   </div>
                 </div>

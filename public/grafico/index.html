@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from tangien.com/demo/webestate/property_listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Jun 2017 23:00:28 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>EuAprovo</title>
+
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="../lib/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="../lib/aos/aos.css" rel="stylesheet">
+    <link href="../lib/Magnific-Popup/magnific-popup.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../lib/jquery-3.2.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../lib/owl-carousel/owl.carousel.min.js"></script>
+    <script src="../lib/aos/aos.js"></script>
+    <script src="../lib/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+    <script src="../lib/jquery.sticky-sidebar-scroll.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="/index-controller.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="indexCtrl">
+    <nav class="navbar navbar-inverse navbar-transparent" id="menu">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="/"><img src="../img/logo.png" /></a> </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="../">Listar leis</a></li>
+                    <li><a href="vereador/">Listar vereadores</a></li>
+                    <li><a href="detalhe-vereador/">Detalhes dos vereadores</a></li>
+                    <li><a href="">Gráficos</a></li>
+                </ul>
+                <img src="../img/logo-camara.png" style="float: right; margin-top: 15px" />
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <div>
+        <div style="position: relative;">
+            <div dir="ltr" style="position: relative; width: 1100px; height: 500px;">
+                <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                    <svg width="1100" height="500" aria-label="A chart." style="overflow: hidden;">
+                        <defs id="defs"></defs>
+                        <rect x="0" y="0" width="1100" height="500" stroke="none" stroke-width="0" fill="#ffffff"></rect>
+                        <g>
+                            <text text-anchor="start" x="173" y="69.75" font-family="Arial" font-size="15" font-weight="bold"
+                                stroke="none" stroke-width="0" fill="#000000">Projeto de lei ajuda, ou não a população ?</text>
+                            <rect x="173" y="57" width="754" height="15"
+                                stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                        </g>
+                        <g>
+                            <rect x="663" y="96" width="264" height="39" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <rect x="663" y="96" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="108.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">Ajuda!</text>
+                                </g>
+                                <circle cx="670.5" cy="103.5" r="7.5" stroke="none" stroke-width="0" fill="#3366cc"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="120" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="132.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">Não me ajuda!</text>
+                                </g>
+                                <circle cx="670.5" cy="127.5" r="7.5" stroke="none" stroke-width="0" fill="#dc3912"></circle>
+                            </g>
+                        </g>
+                        <g>
+                            <path d="M406,251L363.9631081478896,102.8483893998652A154,154,0,0,1,406,97L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#dc3912"></path>
+                        </g>
+                        <g>
+                            <path d="M406,251L406,97A154,154,0,1,1,363.9631081478896,102.8483893998652L406,251A0,0,0,1,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#3366cc"></path>
+                            <text text-anchor="start" x="402.0174627025522" y="382.16153474964204" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">95.6%</text>
+                        </g>
+                        <g></g>
+                    </svg>
+                    <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Topping</th>
+                                    <th>Slices</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ajuda!</td>
+                                    <td>10,863</td>
+                                </tr>
+                                <tr>
+                                    <td>Não me ajuda!</td>
+                                    <td>500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div aria-hidden="true" style="display: none; position: absolute; top: 510px; left: 1110px; white-space: nowrap; font-family: Arial; font-size: 15px; font-weight: bold;">10,863 (95.6%)</div>
+            <div></div>
+        </div>
+        <div style="position: relative;">
+            <div dir="ltr" style="position: relative; width: 1100px; height: 500px;">
+                <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                    <svg width="1100" height="500" aria-label="A chart." style="overflow: hidden;">
+                        <defs id="defs"></defs>
+                        <rect x="0" y="0" width="1100" height="500" stroke="none" stroke-width="0" fill="#ffffff"></rect>
+                        <g>
+                            <text text-anchor="start" x="173" y="69.75" font-family="Arial" font-size="15" font-weight="bold"
+                                stroke="none" stroke-width="0" fill="#000000">Vereadores que menos aprovaram Projetos de Lei</text>
+                            <rect x="173" y="57" width="754" height="15"
+                                stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                        </g>
+                        <g>
+                            <rect x="663" y="96" width="264" height="135" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <rect x="663" y="96" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="108.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">GOMES ARANTUS : PSDB</text>
+                                </g>
+                                <circle cx="670.5" cy="103.5" r="7.5" stroke="none" stroke-width="0" fill="#3366cc"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="120" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="132.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">OTACÍLIO NETO : PRB</text>
+                                </g>
+                                <circle cx="670.5" cy="127.5" r="7.5" stroke="none" stroke-width="0" fill="#dc3912"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="144" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="156.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">VLADEMIR ARAUJO : PSDB</text>
+                                </g>
+                                <circle cx="670.5" cy="151.5" r="7.5" stroke="none" stroke-width="0" fill="#ff9900"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="168" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="180.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">RODRIGO CARNEIRO : PSB</text>
+                                </g>
+                                <circle cx="670.5" cy="175.5" r="7.5" stroke="none" stroke-width="0" fill="#109618"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="192" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="204.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">DENIS ALBERTO CATOSSI: PSDB</text>
+                                </g>
+                                <circle cx="670.5" cy="199.5" r="7.5" stroke="none" stroke-width="0" fill="#990099"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="216" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="228.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">SUZUNE PEREIRA: PPT</text>
+                                </g>
+                                <circle cx="670.5" cy="223.5" r="7.5" stroke="none" stroke-width="0" fill="#0099c6"></circle>
+                            </g>
+                        </g>
+                        <g>
+                            <path d="M406,251L406,97A154,154,0,0,1,426.8794477874148,98.42199155811275L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#3366cc"></path>
+                        </g>
+                        <g>
+                            <path d="M406,251L426.8794477874148,98.42199155811275A154,154,0,0,1,502.8339352864498,131.25364733345884L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#dc3912"></path>
+                            <text text-anchor="start" x="438.51557541926087" y="141.69805111492641" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">8.7%</text>
+                        </g>
+                        <g>
+                            <path d="M406,251L502.8339352864498,131.25364733345884A154,154,0,0,1,519.5996480036835,354.976535686852L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#ff9900"></path>
+                            <text text-anchor="start" x="513.9911046045651" y="247.03309089538402" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">26%</text>
+                        </g>
+                        <g>
+                            <path d="M406,251L519.5996480036835,354.976535686852A154,154,0,0,1,507.637634433338,366.6969803702549L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#109618"></path>
+                        </g>
+                        <g>
+                            <path d="M406,251L507.637634433338,366.6969803702549A154,154,0,0,1,501.19648387797326,372.05217659038925L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#990099"></path>
+                        </g>
+                        <g>
+                            <path d="M406,251L501.19648387797326,372.05217659038925A154,154,0,1,1,406,97L406,251A0,0,0,1,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#0099c6"></path>
+                            <text text-anchor="start" x="274.66306365307634" y="294.2649332747409" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">60.6%</text>
+                        </g>
+                        <g></g>
+                    </svg>
+                    <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Topping</th>
+                                    <th>Slices</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GOMES ARANTUS : PSDB</td>
+                                    <td>0.25</td>
+                                </tr>
+                                <tr>
+                                    <td>OTACÍLIO NETO : PRB </td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>VLADEMIR ARAUJO : PSDB</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>RODRIGO CARNEIRO : PSB</td>
+                                    <td>0.2</td>
+                                </tr>
+                                <tr>
+                                    <td>DENIS ALBERTO CATOSSI: PSDB</td>
+                                    <td>0.1</td>
+                                </tr>
+                                <tr>
+                                    <td>SUZUNE PEREIRA: PPT</td>
+                                    <td>7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div aria-hidden="true" style="display: none; position: absolute; top: 510px; left: 1110px; white-space: nowrap; font-family: Arial; font-size: 15px; font-weight: bold;">3 (26%)</div>
+            <div></div>
+        </div>
+        <div style="position: relative;">
+            <div dir="ltr" style="position: relative; width: 1100px; height: 500px;">
+                <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                    <svg width="1100" height="500" aria-label="A chart." style="overflow: hidden;">
+                        <defs id="defs"></defs>
+                        <rect x="0" y="0" width="1100" height="500" stroke="none" stroke-width="0" fill="#ffffff"></rect>
+                        <g>
+                            <text text-anchor="start" x="173" y="69.75" font-family="Arial" font-size="15" font-weight="bold"
+                                stroke="none" stroke-width="0" fill="#000000">Segmentos</text>
+                            <rect x="173" y="57" width="754" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                fill="#ffffff"></rect>
+                        </g>
+                        <g>
+                            <rect x="663" y="96" width="264" height="135" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <rect x="663" y="96" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="108.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">Esporte</text>
+                                </g>
+                                <circle cx="670.5" cy="103.5" r="7.5" stroke="none" stroke-width="0" fill="#3366cc"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="120" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="132.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">Saúde</text>
+                                </g>
+                                <circle cx="670.5" cy="127.5" r="7.5" stroke="none" stroke-width="0" fill="#dc3912"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="144" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="156.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">Educação</text>
+                                </g>
+                                <circle cx="670.5" cy="151.5" r="7.5" stroke="none" stroke-width="0" fill="#ff9900"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="168" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="180.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">Tranporte</text>
+                                </g>
+                                <circle cx="670.5" cy="175.5" r="7.5" stroke="none" stroke-width="0" fill="#109618"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="192" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="204.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">Social</text>
+                                </g>
+                                <circle cx="670.5" cy="199.5" r="7.5" stroke="none" stroke-width="0" fill="#990099"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="216" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="228.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">Trânsito</text>
+                                </g>
+                                <circle cx="670.5" cy="223.5" r="7.5" stroke="none" stroke-width="0" fill="#0099c6"></circle>
+                            </g>
+                        </g>
+                        <g>
+                            <path d="M406,251L406,97A154,154,0,0,1,526.4020483000766,154.98257051375504L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#3366cc"></path>
+                            <text text-anchor="start" x="437.42371788508706" y="146.35276742545858" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">14.3%</text>
+                        </g>
+                        <g>
+                            <path d="M406,251L526.4020483000766,154.98257051375504A154,154,0,0,1,547.6072769729234,311.52585487470424L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#dc3912"></path>
+                            <text text-anchor="start" x="500.05808898602515" y="240.59659326365122" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">17.1%</text>
+                        </g>
+                        <g>
+                            <path d="M406,251L547.6072769729234,311.52585487470424A154,154,0,0,1,496.51892885304085,375.5886171337419L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#ff9900"></path>
+                            <text text-anchor="start" x="483.5640810408451" y="331.662338174193" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">8.6%</text>
+                        </g>
+                        <g>
+                            <path d="M406,251L255.86110152399917,285.2682238292724A154,154,0,0,1,406,97L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#0099c6"></path>
+                            <text text-anchor="start" x="292.7835626527432" y="183.1085818924625" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">28.6%</text>
+                        </g>
+                        <g>
+                            <path d="M406,251L392.19554642887135,404.3800412752668A154,154,0,0,1,255.86110152399917,285.26822382927253L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#990099"></path>
+                            <text text-anchor="start" x="309.85165702928396" y="349.13175204680164" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">20%</text>
+                        </g>
+                        <g>
+                            <path d="M406,251L496.51892885304085,375.5886171337419A154,154,0,0,1,392.19554642887124,404.3800412752668L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#109618"></path>
+                            <text text-anchor="start" x="418.8015586740898" y="376.9154878828091" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">11.4%</text>
+                        </g>
+                        <g></g>
+                    </svg>
+                    <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Topping</th>
+                                    <th>Slices</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Esporte</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Saúde</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Educação</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Tranporte</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Social</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>Trânsito</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div aria-hidden="true" style="display: none; position: absolute; top: 510px; left: 1110px; white-space: nowrap; font-family: Arial; font-size: 15px;">Trânsito</div>
+            <div></div>
+        </div>
+        <div style="position: relative;">
+            <div dir="ltr" style="position: relative; width: 1100px; height: 500px;">
+                <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                    <svg width="1100" height="500" aria-label="A chart." style="overflow: hidden;">
+                        <defs id="defs"></defs>
+                        <rect x="0" y="0" width="1100" height="500" stroke="none" stroke-width="0" fill="#ffffff"></rect>
+                        <g>
+                            <text text-anchor="start" x="173" y="69.75" font-family="Arial" font-size="15" font-weight="bold"
+                                stroke="none" stroke-width="0" fill="#000000">Vereadores e partidos que mais apoiam projetos de lei</text>
+                            <rect x="173" y="57" width="754"
+                                height="15" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                        </g>
+                        <g>
+                            <rect x="663" y="96" width="264" height="135" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <rect x="663" y="96" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="108.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">ALINE CARDOSO : PSDB</text>
+                                </g>
+                                <circle cx="670.5" cy="103.5" r="7.5" stroke="none" stroke-width="0" fill="#3366cc"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="120" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="132.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">ATILIO FRANCISCO : PRB</text>
+                                </g>
+                                <circle cx="670.5" cy="127.5" r="7.5" stroke="none" stroke-width="0" fill="#dc3912"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="144" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="156.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">AURELIO NOMURA : PSDB</text>
+                                </g>
+                                <circle cx="670.5" cy="151.5" r="7.5" stroke="none" stroke-width="0" fill="#ff9900"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="168" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="180.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">CAIO MIRANDA CARNEIRO: PSB</text>
+                                </g>
+                                <circle cx="670.5" cy="175.5" r="7.5" stroke="none" stroke-width="0" fill="#109618"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="192" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="204.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">CLAUDINHO DE SOUZA: PSDB</text>
+                                </g>
+                                <circle cx="670.5" cy="199.5" r="7.5" stroke="none" stroke-width="0" fill="#990099"></circle>
+                            </g>
+                            <g>
+                                <rect x="663" y="216" width="264" height="15" stroke="none" stroke-width="0" fill-opacity="0"
+                                    fill="#ffffff"></rect>
+                                <g>
+                                    <text text-anchor="start" x="684" y="228.75" font-family="Arial" font-size="15" stroke="none"
+                                        stroke-width="0" fill="#222222">ROBERTO ALBARES: PPT</text>
+                                </g>
+                                <circle cx="670.5" cy="223.5" r="7.5" stroke="none" stroke-width="0" fill="#0099c6"></circle>
+                            </g>
+                        </g>
+                        <g>
+                            <path d="M406,251L406,97A154,154,0,0,1,552.4627035094536,203.4113828662581L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#3366cc"></path>
+                            <text text-anchor="start" x="463.8269826822057" y="156.01225771374482" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">20%</text>
+                        </g>
+                        <g>
+                            <path d="M406,251L552.4627035094536,203.4113828662581A154,154,0,0,1,552.4627035094536,298.58861713374193L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#dc3912"></path>
+                            <text text-anchor="start" x="514.7975143869659" y="256.25" font-family="Arial" font-size="15"
+                                stroke="none" stroke-width="0" fill="#ffffff">10%</text>
+                        </g>
+                        <g>
+                            <path d="M406,251L336.08546304010974,113.78499527499136A154,154,0,0,1,406,97L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#0099c6"></path>
+                            <text text-anchor="start" x="359.36394903284895" y="132.80696372013784" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">7.5%</text>
+                        </g>
+                        <g>
+                            <path d="M406,251L253.8959955483488,275.0909076161956A154,154,0,0,1,336.08546304010974,113.78499527499136L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#990099"></path>
+                            <text text-anchor="start" x="282.09234820483414" y="200.7587797656854" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">20%</text>
+                        </g>
+                        <g>
+                            <path d="M406,251L406,405A154,154,0,0,1,253.8959955483488,275.0909076161956L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#109618"></path>
+                            <text text-anchor="start" x="307.30717549777" y="346.6311850754374" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">22.5%</text>
+                        </g>
+                        <g>
+                            <path d="M406,251L552.4627035094536,298.5886171337419A154,154,0,0,1,406,405L406,251A0,0,0,0,0,406,251"
+                                stroke="#ffffff" stroke-width="1" fill="#ff9900"></path>
+                            <text text-anchor="start" x="463.8269826822057" y="356.4877422862552" font-family="Arial"
+                                font-size="15" stroke="none" stroke-width="0" fill="#ffffff">20%</text>
+                        </g>
+                        <g></g>
+                    </svg>
+                    <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Topping</th>
+                                    <th>Slices</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ALINE CARDOSO : PSDB</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>ATILIO FRANCISCO : PRB </td>
+                                    <td>40</td>
+                                </tr>
+                                <tr>
+                                    <td>AURELIO NOMURA : PSDB</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>CAIO MIRANDA CARNEIRO: PSB</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>CLAUDINHO DE SOUZA: PSDB</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>ROBERTO ALBARES: PPT</td>
+                                    <td>30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div aria-hidden="true" style="display: none; position: absolute; top: 510px; left: 1110px; white-space: nowrap; font-family: Arial; font-size: 15px;">ROBERTO ALBARES: PPT</div>
+            <div></div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p><img src="../img/logo.png" /></p>
+                            <address>
+                                <strong>Twitter, Inc.</strong><br> 1355 Market Street, Suite 900<br> San Francisco, CA 94103<br>
+                                <abbr title="Phone">P:</abbr> (123) 456-7890
+                            </address>
+                            <p class="text-muted">Copyright &copy; 2016<br /> All rights reserved</p>
+                        </div>
+                        <div class="col-md-2">
+                            <ul class="list-unstyled">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Plans</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <ul class="list-unstyled">
+                                <li><a href="#">For Rent</a></li>
+                                <li><a href="#">For Sale</a></li>
+                                <li><a href="#">Commercial</a></li>
+                                <li><a href="#">Agents</a></li>
+                                <li><a href="#">Property Guides</a></li>
+                                <li><a href="#">Jobs</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="social-sharebox"> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a>                                <a href="#"><i class="fa fa-google"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a>                                <a href="#"><i class="fa fa-youtube-play"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a>                                </div>
+                            <form>
+                                <h4>Subscribe Newsletter</h4>
+                                <div class="input-group input-group-lg">
+                                    <input type="email" class="form-control" placeholder="Email Address">
+                                    <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">Go!</button>
+                </span> </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
+            //$('[data-toggle="tooltip"]').tooltip()
+        })
+
+    </script>
+    <script type="text/javascript">
+        AOS.init({
+            offset: 30
+        });
+
+    </script>
+    <script>
+        var footer_height = $('#footer').outerHeight() + 30;
+        if (document.getElementById('sidebar')) {
+            $(document).ready(function () {
+                $.stickysidebarscroll("#sidebar", { offset: { top: 20, bottom: footer_height } });
+            });
+        };
+
+    </script>
+</body>
+<!-- Mirrored from tangien.com/demo/webestate/agent_list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Jun 2017 23:00:44 GMT -->
+
+</html>

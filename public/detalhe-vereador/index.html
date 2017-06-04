@@ -11,22 +11,22 @@
 
 <!-- Bootstrap -->
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<link href="lib/owl-carousel/owl.carousel.css" rel="stylesheet">
-<link href="lib/owl-carousel/owl.theme.css" rel="stylesheet">
-<link href="lib/aos/aos.css" rel="stylesheet">
-<link href="lib/Magnific-Popup/magnific-popup.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="../lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="../lib/owl-carousel/owl.theme.css" rel="stylesheet">
+<link href="../lib/aos/aos.css" rel="stylesheet">
+<link href="../lib/Magnific-Popup/magnific-popup.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="lib/jquery-3.2.0.min.js"></script>
+<script src="../lib/jquery-3.2.0.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="lib/owl-carousel/owl.carousel.min.js"></script>
-<script src="lib/aos/aos.js"></script>
-<script src="lib/Magnific-Popup/jquery.magnific-popup.min.js"></script>
-<script src="lib/jquery.sticky-sidebar-scroll.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/owl-carousel/owl.carousel.min.js"></script>
+<script src="../lib/aos/aos.js"></script>
+<script src="../lib/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+<script src="../lib/jquery.sticky-sidebar-scroll.min.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,18 +35,18 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body ng-app="myApp" ng-controller="detalheCtrl">
 <nav class="navbar navbar-inverse navbar-transparent" id="menu">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="index-2.html"><img src="img/logo.png" /></a> </div>
+      <a class="navbar-brand" href="../"><img src="../img/logo.png" /></a> </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="property_listing.html">For Rent</a></li>
+        <li><a href="../">For Rent</a></li>
         <li><a href="property_grid.html">For Sale</a></li>
         <li><a href="agent_list.html">augustoviado</a></li>
         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Templates <span class="caret"></span></a>
@@ -67,7 +67,7 @@
                   <li><a href="agent_list.html">Agent List</a></li>
                   <li><a href="agent.html">Agent Profile</a></li>
                   <li class="title"><a href="#">Property pages</a></li>
-                  <li><a href="property_listing.html">Property List View</a></li>
+                  <li><a href="index.html">Property List View</a></li>
                   <li><a href="property_grid.html">Property Grid View</a></li>
                   <li><a href="property_single.html">Property Single View</a></li>
                   <li><a href="add_listing.html">Add Listing</a></li>
@@ -154,7 +154,7 @@
                     <option>Most popular</option>
                   </select>
                 </div>
-                <div class="btn-group pull-right" role="group"> <a href="property_grid.html" class="btn btn-default"><i class="fa fa-th"></i></a> <a href="property_listing.html" class="btn btn-default"><i class="fa fa-bars"></i></a> </div>
+                <div class="btn-group pull-right" role="group"> <a href="property_grid.html" class="btn btn-default"><i class="fa fa-th"></i></a> <a href="index.html" class="btn btn-default"><i class="fa fa-bars"></i></a> </div>
               </form>
             </div>
             <div class="clearfix"></div>
@@ -162,7 +162,7 @@
               <div class="item" data-aos="fade-up">
                 <div class="row">
                   <div class="col-md-3">
-                    <div class="item-image"> <img src="img/demo/profile.jpg" class="img-responsive"> </div>
+                    <div class="item-image"> <img src="../img/demo/profile.jpg" class="img-responsive"> </div>
                     <div class="added-on">Member since 1 year </div>
                   </div>
                   <div class="col-md-9"> <a href="#" class="btn btn-primary pull-right">View Profile</a>
@@ -177,7 +177,7 @@
               <div class="item" data-aos="fade-up">
                 <div class="row">
                   <div class="col-md-3">
-                    <div class="item-image"> <img src="img/profile-placeholder.jpg" class="img-responsive"> </div>
+                    <div class="item-image"> <img src="../img/profile-placeholder.jpg" class="img-responsive"> </div>
                     <div class="added-on">Member since 1 year </div>
                   </div>
                   <div class="col-md-9"> <a href="#" class="btn btn-primary pull-right">View Profile</a>
@@ -192,7 +192,7 @@
               <div class="item" data-aos="fade-up">
                 <div class="row">
                   <div class="col-md-3">
-                    <div class="item-image"> <img src="img/profile-placeholder.jpg" class="img-responsive"> </div>
+                    <div class="item-image"> <img src="../img/profile-placeholder.jpg" class="img-responsive"> </div>
                     <div class="added-on">Member since 1 year </div>
                   </div>
                   <div class="col-md-9"> <a href="#" class="btn btn-primary pull-right">View Profile</a>
@@ -207,7 +207,7 @@
               <div class="item" data-aos="fade-up">
                 <div class="row">
                   <div class="col-md-3">
-                    <div class="item-image"> <img src="img/profile-placeholder.jpg" class="img-responsive"> </div>
+                    <div class="item-image"> <img src="../img/profile-placeholder.jpg" class="img-responsive"> </div>
                     <div class="added-on">Member since 1 year </div>
                   </div>
                   <div class="col-md-9"> <a href="#" class="btn btn-primary pull-right">View Profile</a>
@@ -233,7 +233,7 @@
       <div class="col-md-10 col-md-offset-1">
         <div class="row">
           <div class="col-md-4">
-            <p><img src="img/logo.png" /></p>
+            <p><img src="../img/logo.png" /></p>
             <address>
             <strong>Twitter, Inc.</strong><br>
             1355 Market Street, Suite 900<br>

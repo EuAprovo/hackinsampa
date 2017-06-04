@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from tangien.com/demo/webestate/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Jun 2017 22:59:34 GMT -->
+<!-- Mirrored from tangien.com/demo/webestate/property_listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Jun 2017 23:00:28 GMT -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>Real Estate</title>
+<title>EuAprovo</title>
 
 <!-- Bootstrap -->
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -37,24 +37,24 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-transparent" id="menu">
-  <div class="container"> 
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="index-2.html"><img src="img/logo.png" /></a> </div>
-    
+      <a class="navbar-brand" href="/"><img src="img/logo.png" /></a> </div>
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="property_listing.html">For Rent</a></li>
-        <li><a href="property_grid.html">For Sale</a></li>
-        <li><a href="agent_list.html">Agents</a></li>
-        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Templates <span class="caret"></span></a>
+        <li><a href="/">ListarLeis</a></li>
+        <li><a href="vereador/">ListarVereadores</a></li>
+        <li><a href="detalhe-vereador/">DetalhesVereadores</a></li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DetalhesLeis <span class="caret"></span></a>
           <ul class="dropdown-menu mega">
             <li class="navbar-text">
               <div class="column">
                 <ul class="list-unstyled">
-                  <li class="title"><a href="index-2.html">Homepage</a></li>
+                  <li class="title"><a href="/">Homepage</a></li>
                   <li class="title">Login/Signup Pages</li>
                   <li><a href="signin.html">Signin</a></li>
                   <li><a href="register.html">Register</a></li>
@@ -74,7 +74,8 @@
                   <li><a href="compare.html">Compare Properties</a></li>
                 </ul>
               </div>
-              <div class="column">
+              <!--
+              div class="column">
                 <ul class="list-unstyled">
                   <li class="title">Other Pages</li>
                   <li><a href="plans.html">Plans</a></li>
@@ -94,170 +95,355 @@
         <li class="register"><a href="register.html"><span>Register</span></a></li>
       </ul>
     </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-  <!-- /.container-fluid --> 
+    <!-- /.navbar-collapse -->
+  <!--/div>
+  < /.container-fluid -->
 </nav>
-<div class="main search-form">
+<div class="container">
+  <div class="search-form">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" class="form-control input-lg" placeholder="Listar Leis">
+          </div>
+
+          </div>
+
+
+              </div>
+            </div!-->
+            <div class="col-md-4">
+              <div class="form-group">
+                <button type="submit" class="btn btn-lg btn-primary btn-block">Pesquisar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--div id="content">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <div class="heading">
-          <h2>Find your new home</h2>
-          <h3>Its just a few clicks away</h3>
-        </div>
-        <form action="http://tangien.com/demo/webestate/property_listing.html">
-          <div class="card">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control input-lg" placeholder="Country, State, County, City, Zip, Title, Address, ID.">
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Property for sale</a></li>
+          <li><a href="#">North Yorkshire</a></li>
+          <li><a href="#">Unity City Academy, North Yorkshire, TS3 property for sale</a></li>
+        </ol>
+        <h1 class="page-header h3">Property for sale near Unity City Academy, North Yorkshire, TS3</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <div id="sidebar">
+              <div id="filters" class="card">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#p_budget" aria-expanded="true" aria-controls="p_type"> Budget <i class="fa fa-caret-down pull-right"></i> </a> </h4>
+                  </div>
+                  <div id="p_budget" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="text" class="form-control input-sm" placeholder="Min">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="text" class="form-control input-sm" placeholder="Max">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <select class="form-control input-lg">
-                        <option>Type</option>
-                        <option>Residential</option>
-                        <option>Commercial</option>
-                      </select>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#p_type" aria-expanded="true" aria-controls="p_type"> Property Type <i class="fa fa-caret-down pull-right"></i> </a> </h4>
+                  </div>
+                  <div id="p_type" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          Flats </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          Houses </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          Farms/Lands </label>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <select class="form-control input-lg">
-                        <option>For Sale</option>
-                        <option>For Rent</option>
-                      </select>
-                    </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#p_features" aria-expanded="true" aria-controls="p_features"> Features <i class="fa fa-caret-down pull-right"></i> </a> </h4>
                   </div>
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <button type="submit" class="btn btn-lg btn-primary btn-block">Search</button>
+                  <div id="p_features" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          Garden </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          Parking/Garage </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          Fireplace </label>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="col-md-9">
+            <div class="sorting">
+              <form class="form-inline">
+                <div class="form-group">
+                  <select class="form-control">
+                    <option selected="selected">Most recent</option>
+                    <option>Highest price</option>
+                    <option>Lowest price</option>
+                    <option>Most reduced</option>
+                    <option>Most popular</option>
+                  </select>
+                </div>
+                <div class="btn-group pull-right" role="group"> <a href="property_grid.html" class="btn btn-default"><i class="fa fa-th"></i></a> <a href="property_listing.html" class="btn btn-default"><i class="fa fa-bars"></i></a> </div>
+              </form>
+            </div>
+            <div class="clearfix"></div>
+            <div class="item-listing list">
+              <div class="item" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="item-image"> <a href="property_single.html"><img src="img/demo/property/1.jpg" class="img-responsive">
+                      <div class="item-for">For Sale</div>
+                      </a> </div>
+                    <div class="added-on">Listed on 19th Feb 2017 by </div>
+                    <div class="added-by">by <span>YOPA, W1H</span></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="added-by-photo"> <img src="img/demo/profile.jpg" class="img-rounded" width="64"> </div>
+                    <div class="item-price">From $1,875 /month</div>
+                    <h3 class="item-title"><a href="property_single.html">3 bed semi-detached house for sale</a></h3>
+                    <div class="item-details-i"> <span class="bedrooms" data-toggle="tooltip" title="3 Bedrooms">3 <i class="fa fa-bed"></i></span> <span class="bathrooms" data-toggle="tooltip" title="2 Bathrooms">2 <i class="fa fa-bath"></i></span> </div>
+                    <div class="item-location">Kirkstone Road, Middlesbrough TS3</div>
+                    <div class="item-details">
+                      <ul>
+                        <li>Sq Ft <span>730-2600</span></li>
+                        <li>Type <span>Apartments</span></li>
+                      </ul>
+                    </div>
+                    <div class="item-actions"> <a href="tel:020 8022 6348"><i class="fa fa-phone"></i> 020 8022 6348</a> <a href="#"  data-toggle="modal" data-target="#leadform"><i class="fa fa-envelope-o"></i> Contact</a> <a href="#"><i class="fa fa-star"></i> Save</a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="item-image"> <a href="property_single.html"><img src="img/demo/property/2.jpg" class="img-responsive">
+                      <div class="item-for">For Sale</div>
+                      </a> </div>
+                    <div class="added-on">Listed on 19th Feb 2017 by </div>
+                    <div class="added-by">by <span>YOPA, W1H</span></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="added-by-photo"> <img src="img/profile-placeholder.jpg" class="img-rounded" width="64"> </div>
+                    <div class="item-price">From $1,875 /month</div>
+                    <h3 class="item-title"><a href="property_single.html">3 bed semi-detached house for sale</a></h3>
+                    <div class="item-details-i"> <span class="bedrooms" data-toggle="tooltip" title="3 Bedrooms">3 <i class="fa fa-bed"></i></span> <span class="bathrooms" data-toggle="tooltip" title="2 Bathrooms">2 <i class="fa fa-bath"></i></span> </div>
+                    <div class="item-location">Kirkstone Road, Middlesbrough TS3</div>
+                    <div class="item-description"> Boasting three spacious bedrooms, three reception areas and a modern kitchen and bathroom this stunning semi detached home in the heart of Berwick Hills is the perfect purchase. </div>
+                    <div class="item-details">
+                      <ul>
+                        <li>Sq Ft <span>730-2600</span></li>
+                        <li>Type <span>Apartments</span></li>
+                      </ul>
+                    </div>
+                    <div class="item-actions"> <a href="tel:020 8022 6348"><i class="fa fa-phone"></i> 020 8022 6348</a> <a href="#"><i class="fa fa-envelope-o"></i> Contact</a> <a href="#"><i class="fa fa-star"></i> Save</a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="item-image"> <a href="property_single.html"><img src="img/demo/property/3.jpg" class="img-responsive">
+                      <div class="item-for">For Sale</div>
+                      </a> </div>
+                    <div class="added-on">Listed on 19th Feb 2017 by </div>
+                    <div class="added-by">by <span>YOPA, W1H</span></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="added-by-photo"> <img src="img/profile-placeholder.jpg" class="img-rounded" width="64"> </div>
+                    <div class="item-price">From $1,875 /month</div>
+                    <h3 class="item-title"><a href="property_single.html">3 bed semi-detached house for sale</a></h3>
+                    <div class="item-details-i"> <span class="bedrooms" data-toggle="tooltip" title="3 Bedrooms">3 <i class="fa fa-bed"></i></span> <span class="bathrooms" data-toggle="tooltip" title="2 Bathrooms">2 <i class="fa fa-bath"></i></span> </div>
+                    <div class="item-location">Kirkstone Road, Middlesbrough TS3</div>
+                    <div class="item-details">
+                      <ul>
+                        <li>Sq Ft <span>730-2600</span></li>
+                        <li>Type <span>Apartments</span></li>
+                      </ul>
+                    </div>
+                    <div class="item-actions"> <a href="tel:020 8022 6348"><i class="fa fa-phone"></i> 020 8022 6348</a> <a href="#"><i class="fa fa-envelope-o"></i> Contact</a> <a href="#"><i class="fa fa-star"></i> Save</a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="item-image"> <a href="property_single.html"><img src="img/demo/property/4.jpg" class="img-responsive">
+                      <div class="item-for">For Sale</div>
+                      </a> </div>
+                    <div class="added-on">Listed on 19th Feb 2017 by </div>
+                    <div class="added-by">by <span>YOPA, W1H</span></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="added-by-photo"> <img src="img/profile-placeholder.jpg" class="img-rounded" width="64"> </div>
+                    <div class="item-price">From $1,875 /month</div>
+                    <h3 class="item-title"><a href="property_single.html">3 bed semi-detached house for sale</a></h3>
+                    <div class="item-details-i"> <span class="bedrooms" data-toggle="tooltip" title="3 Bedrooms">3 <i class="fa fa-bed"></i></span> <span class="bathrooms" data-toggle="tooltip" title="2 Bathrooms">2 <i class="fa fa-bath"></i></span> </div>
+                    <div class="item-location">Kirkstone Road, Middlesbrough TS3</div>
+                    <div class="item-description"> Boasting three spacious bedrooms, three reception areas and a modern kitchen and bathroom this stunning semi detached home in the heart of Berwick Hills is the perfect purchase. </div>
+                    <div class="item-details">
+                      <ul>
+                        <li>Sq Ft <span>730-2600</span></li>
+                        <li>Type <span>Apartments</span></li>
+                      </ul>
+                    </div>
+                    <div class="item-actions"> <a href="tel:020 8022 6348"><i class="fa fa-phone"></i> 020 8022 6348</a> <a href="#"><i class="fa fa-envelope-o"></i> Contact</a> <a href="#"><i class="fa fa-star"></i> Save</a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="item-image"> <a href="property_single.html"><img src="img/demo/property/5.jpg" class="img-responsive">
+                      <div class="item-for">For Sale</div>
+                      </a> </div>
+                    <div class="added-on">Listed on 19th Feb 2017 by </div>
+                    <div class="added-by">by <span>YOPA, W1H</span></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="added-by-photo"> <img src="img/profile-placeholder.jpg" class="img-rounded" width="64"> </div>
+                    <div class="item-price">From $1,875 /month</div>
+                    <h3 class="item-title"><a href="property_single.html">3 bed semi-detached house for sale</a></h3>
+                    <div class="item-details-i"> <span class="bedrooms" data-toggle="tooltip" title="3 Bedrooms">3 <i class="fa fa-bed"></i></span> <span class="bathrooms" data-toggle="tooltip" title="2 Bathrooms">2 <i class="fa fa-bath"></i></span> </div>
+                    <div class="item-location">Kirkstone Road, Middlesbrough TS3</div>
+                    <div class="item-details">
+                      <ul>
+                        <li>Sq Ft <span>730-2600</span></li>
+                        <li>Type <span>Apartments</span></li>
+                      </ul>
+                    </div>
+                    <div class="item-actions"> <a href="tel:020 8022 6348"><i class="fa fa-phone"></i> 020 8022 6348</a> <a href="#"><i class="fa fa-envelope-o"></i> Contact</a> <a href="#"><i class="fa fa-star"></i> Save</a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="item-image"> <a href="property_single.html"><img src="img/demo/property/6.jpg" class="img-responsive">
+                      <div class="item-for">For Sale</div>
+                      </a> </div>
+                    <div class="added-on">Listed on 19th Feb 2017 by </div>
+                    <div class="added-by">by <span>YOPA, W1H</span></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="added-by-photo"> <img src="img/profile-placeholder.jpg" class="img-rounded" width="64"> </div>
+                    <div class="item-price">From $1,875 /month</div>
+                    <h3 class="item-title"><a href="property_single.html">3 bed semi-detached house for sale</a></h3>
+                    <div class="item-details-i"> <span class="bedrooms" data-toggle="tooltip" title="3 Bedrooms">3 <i class="fa fa-bed"></i></span> <span class="bathrooms" data-toggle="tooltip" title="2 Bathrooms">2 <i class="fa fa-bath"></i></span> </div>
+                    <div class="item-location">Kirkstone Road, Middlesbrough TS3</div>
+                    <div class="item-description"> Boasting three spacious bedrooms, three reception areas and a modern kitchen and bathroom this stunning semi detached home in the heart of Berwick Hills is the perfect purchase. </div>
+                    <div class="item-details">
+                      <ul>
+                        <li>Sq Ft <span>730-2600</span></li>
+                        <li>Type <span>Apartments</span></li>
+                      </ul>
+                    </div>
+                    <div class="item-actions"> <a href="tel:020 8022 6348"><i class="fa fa-phone"></i> 020 8022 6348</a> <a href="#"><i class="fa fa-envelope-o"></i> Contact</a> <a href="#"><i class="fa fa-star"></i> Save</a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li> <a href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a> </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li> <a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a> </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Agent Modal -->
+<!--div class="modal fade  item-form" id="leadform" tabindex="-1" role="dialog" aria-labelledby="leadformLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="media">
+          <div class="media-left"><a href="property_single.html"><img src="img/demo/property/1.jpg" class="img-rounded" width="64"></a></div>
+          <div class="media-body">
+            <h4 class="media-heading">Send Message for<br>
+              <small><a href="property_single.html">3 bed semi-detached house for sale</a></small></h4>
+            <ul class="list-unstyled">
+              <li>Kirkstone Road, Middlesbrough TS3</li>
+              <li><a href="tel:01502 392905"><i class="fa fa-phone fa-fw" aria-hidden="true"></i> Call: 01502 392905</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" class="form-control" id="" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label>Your Email</label>
+            <input type="email" class="form-control" id="" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <label>Your Telephone</label>
+            <input type="tel" class="form-control" id="" placeholder="Your Telephone">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="4" class="form-control" placeholder="Please include any useful details, i.e. current status, availability for viewings, etc."></textarea>
           </div>
         </form>
       </div>
-    </div>
-  </div>
-</div>
-<div class="feature-box" data-aos="fade-up">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="image"> <img src="img/demo/icons/1.png" width="80"> </div>
-        <h4>Lifestyle</h4>
-        <div class="caption">Create your best-ever home with the latest trends in renovating, decorating and more.</div>
-        <div class="button"><a href="#">FIND YOUR INSPIRATION</a></div>
-      </div>
-      <div class="col-md-4">
-        <div class="image"> <img src="img/demo/icons/2.png" width="80"> </div>
-        <h4>International</h4>
-        <div class="caption">Thinking abroad? You can now dream and discover international properties.</div>
-        <div class="button"><a href="#">CHOOSE A COUNTRY</a></div>
-      </div>
-      <div class="col-md-4">
-        <div class="image"> <img src="img/demo/icons/3.png" width="80"> </div>
-        <h4>Sell</h4>
-        <div class="caption">Understand your local market, learn how to get the best price for your property and find agents in your area.</div>
-        <div class="button"><a href="#">EXPLORE NOW</a></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Send Message</button>
       </div>
     </div>
   </div>
 </div>
-<div class="feature-box gray" data-aos="fade-up">
-  <div class="container">
-    <div class="main-title">Featured Properties</div>
-    <div class="main-title-description">Thinking abroad? You can now dream and discover international properties</div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <div class="item-listing grid">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="item">
-                <div class="item-image"> <img src="img/demo/property/1.jpg" class="img-responsive">
-                  <div class="item-for">For Sale</div>
-                  <a href="#" class="save-item"><i class="fa fa-star"></i></a> </div>
-                <div class="item-price">From $1,875 /month</div>
-                <h3 class="item-title">3 bed semi-detached house for sale</h3>
-                <div class="item-details-i"> <span class="bedrooms" data-toggle="tooltip" title="" data-original-title="3 Bedrooms">3 <i class="fa fa-bed"></i></span> <span class="bathrooms" data-toggle="tooltip" title="" data-original-title="2 Bathrooms">2 <i class="fa fa-bath"></i></span> </div>
-                <div class="item-location">Kirkstone Road, Middlesbrough TS3</div>
-                <div class="item-actions"> <a href="tel:020 8022 6348"><i class="fa fa-phone"></i> 020 8022 6348</a> <a href="#"><i class="fa fa-envelope-o"></i></a></div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="item">
-                <div class="item-image"> <img src="img/demo/property/2.jpg" class="img-responsive">
-                  <div class="item-for">For Sale</div>
-                  <a href="#" class="save-item"><i class="fa fa-star"></i></a> </div>
-                <div class="item-price">From $1,875 /month</div>
-                <h3 class="item-title">3 bed semi-detached house for sale</h3>
-                <div class="item-details-i"> <span class="bedrooms" data-toggle="tooltip" title="" data-original-title="3 Bedrooms">3 <i class="fa fa-bed"></i></span> <span class="bathrooms" data-toggle="tooltip" title="" data-original-title="2 Bathrooms">2 <i class="fa fa-bath"></i></span> </div>
-                <div class="item-location">Kirkstone Road, Middlesbrough TS3</div>
-                <div class="item-actions"> <a href="tel:020 8022 6348"><i class="fa fa-phone"></i> 020 8022 6348</a> <a href="#"><i class="fa fa-envelope-o"></i></a></div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="item">
-                <div class="item-image"> <img src="img/demo/property/3.jpg" class="img-responsive">
-                  <div class="item-for">For Sale</div>
-                  <a href="#" class="save-item"><i class="fa fa-star"></i></a> </div>
-                <div class="item-price">From $1,875 /month</div>
-                <h3 class="item-title">3 bed semi-detached house for sale</h3>
-                <div class="item-details-i"> <span class="bedrooms" data-toggle="tooltip" title="" data-original-title="3 Bedrooms">3 <i class="fa fa-bed"></i></span> <span class="bathrooms" data-toggle="tooltip" title="" data-original-title="2 Bathrooms">2 <i class="fa fa-bath"></i></span> </div>
-                <div class="item-location">Kirkstone Road, Middlesbrough TS3</div>
-                <div class="item-actions"> <a href="tel:020 8022 6348"><i class="fa fa-phone"></i> 020 8022 6348</a> <a href="#"><i class="fa fa-envelope-o"></i></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="feature-box testimonials" data-aos="fade-up">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <div id="testimonials" class="owl-carousel owl-theme">
-          <div class="item">
-            <div class="image"> <img class="img-circle" src="img/demo/profile.jpg" width="180" alt="">
-              <h4>Thank you for your quick and clear responses. They are much appreciated. This was a site that needed to go up fast and it has – customizations and all!</h4>
-              <div class="caption">The Brown Family</div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="image"> <img class="img-circle" src="img/profile-placeholder.jpg" width="180" alt="">
-              <h4>Thank you for your quick and clear responses. They are much appreciated. This was a site that needed to go up fast and it has – customizations and all!</h4>
-              <div class="caption">The Brown Family</div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="image"> <img class="img-circle" src="img/profile-placeholder.jpg" width="180" alt="">
-              <h4>Thank you for your quick and clear responses. They are much appreciated. This was a site that needed to go up fast and it has – customizations and all!</h4>
-              <div class="caption">The Brown Family</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function() {
-  $("#testimonials").owlCarousel({
-      navigation : true,
-      singleItem:true
-  });
- 
-});
-</script>
 <footer id="footer">
   <div class="container">
     <div class="row">
@@ -313,12 +499,12 @@ $(function () {
 	$('[data-toggle="tooltip"]').tooltip({container: 'body'});
 	//$('[data-toggle="tooltip"]').tooltip()
 })
-</script> 
+</script>
 <script type="text/javascript">
 AOS.init({
 	offset: 30
 });
-</script> 
+</script>
 <script>
 var footer_height = $('#footer').outerHeight() + 30;
 if (document.getElementById('sidebar')) {
@@ -328,6 +514,5 @@ if (document.getElementById('sidebar')) {
 };
 </script>
 </body>
-
-<!-- Mirrored from tangien.com/demo/webestate/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Jun 2017 22:59:53 GMT -->
+<-- Mirrored from tangien.com/demo/webestate/property_listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Jun 2017 23:00:33 GMT -->
 </html>

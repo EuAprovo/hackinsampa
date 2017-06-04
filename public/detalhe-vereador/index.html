@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from tangien.com/demo/webestate/agent_list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Jun 2017 23:00:44 GMT -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>Real Estate</title>
 
-<!-- Bootstrap -->
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -19,9 +16,7 @@
 <link href="../lib/Magnific-Popup/magnific-popup.css" rel="stylesheet">
 <link href="../css/style.css" rel="stylesheet">
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../lib/jquery-3.2.0.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="../lib/owl-carousel/owl.carousel.min.js"></script>
 <script src="../lib/aos/aos.js"></script>
@@ -41,12 +36,10 @@
 <body ng-app="myApp" ng-controller="detalheCtrl">
 <nav class="navbar navbar-inverse navbar-transparent" id="menu">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       <a class="navbar-brand" href="../"><img src="../img/logo.png" /></a> </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
           <li><a href="../">Listar leis</a></li>
@@ -55,58 +48,17 @@
       </ul>
       <img src="../img/logo-camara.png"  style="float: right; margin-top: 15px"/>
     </div>
-    <!-- /.navbar-collapse -->
   </div>
-  <!-- /.container-fluid -->
 </nav>
 <div id="content">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <ol class="breadcrumb">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Vereadores</a></li>
-        </ol>
         <div class="row">
-          <!--<div class="col-md-4">
-            <div id="sidebar">
-              <div class="card">
-                <h4>Search Agents <br>
-                  <small>Save the hassle. Choose from over 20,000+ Agents</small></h4>
-                <form>
-                  <div class="form-group">
-                    <label>Enter Location, landmark..</label>
-                    <input type="text" class="form-control"  placeholder="Enter Location, landmark..">
-                  </div>
-                  <div class="form-group">
-                    <label>Property Type</label>
-                    <select class="form-control">
-                      <option>Please Select</option>
-                      <option>Flat</option>
-                      <option>Villa</option>
-                      <option>Office Space</option>
-                      <option>Showroom</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label>Dealing in</label>
-                    <select class="form-control">
-                      <option>Please Select</option>
-                      <option>Rent</option>
-                      <option>Sale</option>
-                      <option>Lease</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="btn btn-lg btn-block btn-primary">Search</button>
-                </form>
-              </div>
-            </div>
-          </div>-->
           <div class="col-md-8">
             <h1 class="page-header">Vereadores</h1>
             <div class="clearfix"></div>
             <div class="item-listing list">
-
               <div ng-repeat="x in json">
                 <div class="item" data-aos="fade-up">
                 <div class="row">
@@ -122,9 +74,7 @@
                 </div>
               </div>
               </div>
-
             </div>
-            <p><a href="#" class="btn btn-lg btn-link btn-block">Load More <i class="fa fa-caret-down"></i></a></p>
           </div>
         </div>
       </div>
@@ -155,7 +105,6 @@
 <script type="text/javascript">
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip({container: 'body'});
-	//$('[data-toggle="tooltip"]').tooltip()
 })
 </script>
 <script type="text/javascript">

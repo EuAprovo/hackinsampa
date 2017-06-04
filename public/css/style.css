@@ -26,6 +26,10 @@ a:hover, a:active, a:focus {
 	box-shadow:none;
 	border-color:#009688;
 }
+
+.navbar-brand img {
+	height: 80px;
+}
 /* Menu */
 #menu .navbar-brand {
     opacity:1;
